@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>JavaScript innerHTML</title>
+</head>
+<body>
+    <ul id="menu">
+        <li>Home</li>
+        <li>Services</li>
+    </ul>
+    <script>
+        let menu = document.getElementById('menu');
+
+        // create new li element
+        let li = document.createElement('li');
+        li.textContent = 'About Us';
+        // add it to the ul element
+        menu.appendChild(li);
+
+        console.log(menu.innerHTML);
+    </script>
+</body>
+</html>

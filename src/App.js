@@ -30,6 +30,8 @@ import HookCounter from './components/HookCounter';
 import HookCounterTwo from './components/HookCounterTwo';
 import HookwithArray from './components/HookwithArray';
 import ClassCounter from './hooks/ClassCount'
+import MouseContainer from './hooks/MouseContainer'
+import Test from "./components/test"
 
 function App() {
   return (
@@ -64,7 +66,9 @@ function App() {
       <PostForm /> */}
       {/* <HookCounterTwo />
       <HookwithArray /> */}
-      <ClassCounter />
+      {/* <ClassCounter />
+      <MouseContainer /> */}
+      <Test />
     </div>
 
   );

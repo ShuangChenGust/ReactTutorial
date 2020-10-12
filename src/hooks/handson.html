@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul id="ulOne"></ul>
+<ul id="menu">
+  <li>
+    1
+  </li>
+  <li>
+   2
+  </li>
+</ul>
+
+<input id= "userinput" type="text" value="text"/>
+<button onclick="handleClick()">
+submit
+</button>
+</body>
+<script>
+    var el = document.createElement("li"),
+  content = document.createTextNode("My sample text"),
+  myUl = document.getElementById("ulOne");
+
+el.appendChild(content);
+el.id = "bar";
+
+myUl.appendChild(el);
+
+function handleClick() {
+  let value = document.getElementById("userinput").value;
+  
+/* 	document.getElementById("menu").innerHTML = value; */
+  let li = document.createElement('li');
+  li.textContent = value;
+  console.log(value);
+  menu.appendChild(li);
+  console.log(menu.innerHTML);
+}
+
+</script>
+</html>
